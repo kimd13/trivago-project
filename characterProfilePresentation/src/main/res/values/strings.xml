@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Success -->
+    <string name="unknown_value">Unknown</string>
+
+    <!-- Personal Info -->
+    <string name="character_personal_section_title">Personal</string>
+    <string name="character_personal_name">Name: %s</string>
+    <string name="character_personal_birth_year">Birth year: %s</string>
+    <string name="character_personal_height">Height: %s</string>
+    <string name="character_personal_height_value">%d feet %d inches / %d centimeters</string>
+
+    <!-- Species Info -->
+    <string name="species_section_title">Species</string>
+    <string name="species_name">Name: %s</string>
+    <string name="species_language">Language: %s</string>
+
+    <!-- HomeWorld Info -->
+    <string name="home_world_section_title">Home World</string>
+    <string name="home_world_name">Name: %s</string>
+    <string name="home_world_population">Population: %s</string>
+
+    <!-- Films Info -->
+    <string name="films_section_title">Films</string>
+    <string name="films_title">Title: %s</string>
+    <string name="film_opening_crawl">Opening crawl: %s</string>
+
+    <!-- Loading -->
+    <string name="loading_message">Gathering intel…</string>
+
+    <!-- Nothing To Display -->
+    <string name="nothing_to_display_message">No intel available…</string>
+</resources>

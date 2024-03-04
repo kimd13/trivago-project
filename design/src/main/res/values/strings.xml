@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warnings -->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="data_out_of_sync">Out of sync</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- No Results -->
+    <string name="no_results_found">No results found for %s</string>
+
+    <!-- Loading -->
+    <string name="searching">Searching for %s</string>
+
+    <!-- Success -->
+    <string name="more_details">More details</string>
+    <string name="home_character_complete_description">This character was born in %s and measured at %d feet %d inches / %d centimeters.</string>
+    <string name="home_character_height_description">This character was measured at %d feet %d inches / %d centimeters.</string>
+    <string name="home_character_birth_year_description">This character was born in %s.</string>
+    <string name="home_character_vague_description">This character has no glanceable features.</string>
+</resources>
