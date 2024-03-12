@@ -16,10 +16,10 @@ unstable class CharacterProfileViewModel {
   unstable val filmsSectionState: StateFlow<CharacterProfileSectionState<FilmsSection>>
   <runtime stability> = Unstable
 }
-runtime class Success {
+stable class Success {
   runtime val section: T
   stable val warning: StarWarsWarning?
-  <runtime stability> = Parameter(T)
+  <runtime stability> = Stable
 }
 stable class NothingToDisplay {
   stable val warning: StarWarsWarning?
@@ -28,42 +28,34 @@ stable class NothingToDisplay {
 stable class Loading {
   <runtime stability> = Stable
 }
-unstable class CharacterPersonalInfo {
+stable class CharacterPersonalInfo {
   stable val name: String
   unstable val birthYear: BirthYear
   unstable val height: Height
-  <runtime stability> = Unstable
 }
-unstable class CharacterPersonalSection {
-  unstable val info: CharacterPersonalInfo
-  <runtime stability> = Unstable
+stable class CharacterPersonalSection {
+  stable val info: CharacterPersonalInfo
 }
 stable class FilmInfo {
   stable val id: Long
   stable val title: String
   stable val openingCrawl: String
-  <runtime stability> = Stable
 }
 stable class FilmsSection {
   stable val infoListing: ImmutableList<FilmInfo>
-  <runtime stability> = 
 }
-unstable class HomeWorldInfo {
+stable class HomeWorldInfo {
   stable val name: String
   unstable val population: Population
-  <runtime stability> = Unstable
 }
-unstable class HomeWorldSection {
-  unstable val info: HomeWorldInfo
-  <runtime stability> = Unstable
+stable class HomeWorldSection {
+  stable val info: HomeWorldInfo
 }
-unstable class SpeciesInfo {
+stable class SpeciesInfo {
   stable val id: Long
   stable val name: String
   unstable val language: Language
-  <runtime stability> = Unstable
 }
-unstable class SpeciesSection {
-  unstable val infoListing: ImmutableList<SpeciesInfo>
-  <runtime stability> = Unstable
+stable class SpeciesSection {
+  stable val infoListing: ImmutableList<SpeciesInfo>
 }

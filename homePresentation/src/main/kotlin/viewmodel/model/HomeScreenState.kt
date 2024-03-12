@@ -1,22 +1,24 @@
 package com.kimd13.homepresentation.viewmodel.model
 
+import androidx.compose.runtime.Immutable
 import com.kimd13.design.component.StarWarsWarning
 
-sealed class HomeScreenState {
+@Immutable
+sealed interface HomeScreenState {
 
-    data object ReadyForSearch : HomeScreenState()
+    data object ReadyForSearch : HomeScreenState
 
     data class Success(
         val query: String,
         val page: HomePage
-    ) : HomeScreenState()
+    ) : HomeScreenState
 
     data class NoResults(
         val query: String,
         val warning: StarWarsWarning? = null
-    ) : HomeScreenState()
+    ) : HomeScreenState
 
     data class Loading(
         val query: String
-    ) : HomeScreenState()
+    ) : HomeScreenState
 }

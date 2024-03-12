@@ -1,8 +1,10 @@
 package com.kimd13.homepresentation.viewmodel.model
 
+import androidx.compose.runtime.Immutable
 import com.kimd13.charactercore.model.BirthYear
 import com.kimd13.charactercore.model.Height
 
+@Immutable
 sealed interface HomeCharacterDescription {
 
     data class CompleteDescription(

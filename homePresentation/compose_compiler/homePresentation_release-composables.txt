@@ -63,19 +63,19 @@ restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun PageContr
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun PageControllerDarkPreview()
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun QuickGlanceCharacterCard(
   stable name: String
-  description: HomeCharacterDescription
+  stable description: HomeCharacterDescription
   stable onClick: Function0<Unit>
   stable modifier: Modifier? = @static Companion
 )
 fun toStringComposed(
-  <this>: HomeCharacterDescription
+  stable <this>: HomeCharacterDescription
 ): String
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun QuickGlanceCharacterCardPreview(
   stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
 )
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun QuickGlanceCharacterCardDarkPreview()
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SuccessContent(
-  page: HomePage
+  stable page: HomePage
   stable onCharacterClick: Function1<@[ParameterName(name = 'id')] Long, Unit>
   stable modifier: Modifier? = @static Companion
 )

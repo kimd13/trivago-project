@@ -1,5 +1,7 @@
 package com.kimd13.homepresentation.viewmodel.model
 
+import androidx.compose.runtime.Immutable
+
 /**
  * Encapsulates all fields related to a search.
  * Fields must be packaged together to avoid
@@ -11,6 +13,7 @@ package com.kimd13.homepresentation.viewmodel.model
  *      page resets to 1. Race condition happens if page or query
  *      triggers an emission prior to the other.
  */
+@Immutable
 data class HomeSearchArgs(
     val query: String,
     val page: Int

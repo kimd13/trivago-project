@@ -7,24 +7,23 @@ unstable class HomeViewModel {
   unstable val screenState: StateFlow<HomeScreenState>
   <runtime stability> = Unstable
 }
-runtime class HomeCharacter {
+stable class HomeCharacter {
   stable val id: Long
   stable val name: String
-  runtime val description: HomeCharacterDescription
-  <runtime stability> = Uncertain(HomeCharacterDescription)
+  stable val description: HomeCharacterDescription
 }
-unstable class CompleteDescription {
+stable class CompleteDescription {
   unstable val birthYear: Recorded
   unstable val height: Recorded
-  <runtime stability> = Unstable
+  <runtime stability> = Stable
 }
-unstable class HeightOnlyDescription {
+stable class HeightOnlyDescription {
   unstable val height: Recorded
-  <runtime stability> = Unstable
+  <runtime stability> = Stable
 }
-unstable class BirthYearOnlyDescription {
+stable class BirthYearOnlyDescription {
   unstable val birthYear: Recorded
-  <runtime stability> = Unstable
+  <runtime stability> = Stable
 }
 stable class VagueDescription {
   <runtime stability> = Stable
@@ -35,16 +34,15 @@ stable class HomePage {
   stable val nextPage: Function0<Unit>
   stable val previousPageExists: Boolean
   stable val previousPage: Function0<Unit>
-  runtime val characters: ImmutableList<HomeCharacter>
-  <runtime stability> = 
+  stable val characters: ImmutableList<HomeCharacter>
 }
 stable class ReadyForSearch {
   <runtime stability> = Stable
 }
 stable class Success {
   stable val query: String
-  runtime val page: HomePage
-  <runtime stability> = 
+  stable val page: HomePage
+  <runtime stability> = Stable
 }
 stable class NoResults {
   stable val query: String
@@ -55,13 +53,9 @@ stable class Loading {
   stable val query: String
   <runtime stability> = Stable
 }
-stable class HomeScreenState {
-  <runtime stability> = Stable
-}
 stable class HomeSearchArgs {
   stable val query: String
   stable val page: Int
-  <runtime stability> = Stable
 }
 unstable class PageResponseWithArgs {
   unstable val response: Response<Page<ImmutableList<Character>>>

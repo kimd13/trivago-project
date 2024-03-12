@@ -1,7 +1,9 @@
 package com.kimd13.characterprofilepresentation.viewmodel.model
 
+import androidx.compose.runtime.Immutable
 import com.kimd13.design.component.StarWarsWarning
 
+@Immutable
 sealed interface CharacterProfileSectionState<out T> {
 
     sealed interface CharacterProfileSectionStateWithWarning<out T> :
