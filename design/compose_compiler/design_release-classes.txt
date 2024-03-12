@@ -1,0 +1,63 @@
+stable class StarWarsTheme {
+  stable val icons: StarWarsIcons
+  stable val sizes: StarWarsSizes
+  stable val spaces: StarWarsSpaces
+  stable val borders: StarWarsBorders
+  stable val shapes: StarWarsShapes
+  stable val typography: StarWarsTypography
+  <runtime stability> = Stable
+}
+stable class StarWarsBorders {
+  stable val thin: Dp
+  <runtime stability> = Stable
+}
+stable class StarWarsColors {
+  stable val primary: Color
+  stable val surface: Color
+  stable val onSurface: Color
+  stable val surfaceElevated: Color
+  stable val error: Color
+  stable val onError: Color
+  stable val highlight: Color
+  stable val onHighlight: Color
+  <runtime stability> = Stable
+}
+stable class StarWarsElevations {
+  stable val slightlyRaised: Dp
+  <runtime stability> = Stable
+}
+stable class StarWarsIcons {
+  stable val search: ImageVector
+  stable val warning: ImageVector
+  stable val arrowLeft: ImageVector
+  stable val arrowRight: ImageVector
+  stable val arrowUp: ImageVector
+  <runtime stability> = Stable
+}
+stable class StarWarsShapes {
+  stable val circle: Shape
+  stable val roundedSmall: Shape
+  stable val roundedMedium: Shape
+  stable val roundedLarge: Shape
+  <runtime stability> = Stable
+}
+stable class StarWarsSizes {
+  stable val xSmall: Dp
+  stable val small: Dp
+  stable val medium: Dp
+  stable val large: Dp
+  stable val xLarge: Dp
+  <runtime stability> = Stable
+}
+stable class StarWarsSpaces {
+  stable val small: Dp
+  stable val medium: Dp
+  stable val large: Dp
+  <runtime stability> = Stable
+}
+stable class StarWarsTypography {
+  stable val title: TextStyle
+  stable val body: TextStyle
+  stable val label: TextStyle
+  <runtime stability> = Stable
+}

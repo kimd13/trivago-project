@@ -56,6 +56,7 @@ dependencies {
         api(IMMUTABLE_COLLECTIONS)
 
         // For internal usage only.
+        implementation(CORE_KTX)
         implementation(COMPOSE_MATERIAL_3)
     }
 
