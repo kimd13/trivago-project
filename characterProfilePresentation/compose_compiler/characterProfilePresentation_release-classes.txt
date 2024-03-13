@@ -1,0 +1,61 @@
+unstable class CharacterProfileViewModel {
+  unstable val speciesRepository: SpeciesRepository
+  unstable val planetRepository: PlanetRepository
+  unstable val filmRepository: FilmRepository
+  stable val id: Long
+  unstable val characterResponse: StateFlow<Response<Character>>
+  unstable val characterPersonalSectionState: StateFlow<CharacterProfileSectionState<CharacterPersonalSection>>
+  unstable val speciesAbsentCharacterDataSectionState: Flow<CharacterProfileSectionState<SpeciesSection>>
+  unstable val speciesPresentCharacterDataSectionState: Flow<CharacterProfileSectionState<SpeciesSection>>
+  unstable val speciesSectionState: StateFlow<CharacterProfileSectionState<SpeciesSection>>
+  unstable val homeWorldAbsentCharacterDataSectionState: Flow<CharacterProfileSectionState<HomeWorldSection>>
+  unstable val homeWorldPresentCharacterDataSectionState: Flow<CharacterProfileSectionState<HomeWorldSection>>
+  unstable val homeWorldSectionState: StateFlow<CharacterProfileSectionState<HomeWorldSection>>
+  unstable val filmsAbsentCharacterDataSectionState: Flow<CharacterProfileSectionState<FilmsSection>>
+  unstable val filmsPresentCharacterDataSectionState: Flow<CharacterProfileSectionState<FilmsSection>>
+  unstable val filmsSectionState: StateFlow<CharacterProfileSectionState<FilmsSection>>
+  <runtime stability> = Unstable
+}
+stable class Success {
+  runtime val section: T
+  stable val warning: StarWarsWarning?
+  <runtime stability> = Stable
+}
+stable class NothingToDisplay {
+  stable val warning: StarWarsWarning?
+  <runtime stability> = Stable
+}
+stable class Loading {
+  <runtime stability> = Stable
+}
+stable class CharacterPersonalInfo {
+  stable val name: String
+  unstable val birthYear: BirthYear
+  unstable val height: Height
+}
+stable class CharacterPersonalSection {
+  stable val info: CharacterPersonalInfo
+}
+stable class FilmInfo {
+  stable val id: Long
+  stable val title: String
+  stable val openingCrawl: String
+}
+stable class FilmsSection {
+  stable val infoListing: ImmutableList<FilmInfo>
+}
+stable class HomeWorldInfo {
+  stable val name: String
+  unstable val population: Population
+}
+stable class HomeWorldSection {
+  stable val info: HomeWorldInfo
+}
+stable class SpeciesInfo {
+  stable val id: Long
+  stable val name: String
+  unstable val language: Language
+}
+stable class SpeciesSection {
+  stable val infoListing: ImmutableList<SpeciesInfo>
+}

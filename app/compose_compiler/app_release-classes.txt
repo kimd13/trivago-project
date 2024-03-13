@@ -1,0 +1,6 @@
+stable class StarWarsActivity {
+  <runtime stability> = Stable
+}
+stable class StarWarsApplication {
+  <runtime stability> = Stable
+}

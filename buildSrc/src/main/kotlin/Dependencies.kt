@@ -1,6 +1,7 @@
 object Dependencies {
 
     internal object Versions {
+        const val CORE_KTX = "1.12.0"
         const val IMMUTABLE_COLLECTIONS = "0.3.6"
         const val COROUTINES = "1.7.2"
         const val ACTIVITY_COMPOSE = "1.8.2"
@@ -13,6 +14,7 @@ object Dependencies {
         const val ROOM = "2.6.1"
     }
 
+    const val CORE_KTX = "androidx.core:core-ktx:${Versions.CORE_KTX}"
     const val IMMUTABLE_COLLECTIONS =
         "org.jetbrains.kotlinx:kotlinx-collections-immutable:${Versions.IMMUTABLE_COLLECTIONS}"
     const val COROUTINES =

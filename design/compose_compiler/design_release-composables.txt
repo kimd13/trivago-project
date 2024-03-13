@@ -1,0 +1,118 @@
+restartable skippable scheme("[androidx.compose.ui.UiComposable, [androidx.compose.ui.UiComposable]]") fun StarWarsCard(
+  stable modifier: Modifier? = @static Companion
+  stable onClick: Function0<Unit>? = @static null
+  stable horizontalArrangement: Horizontal? = @static Arrangement.Start
+  stable verticalAlignment: Vertical? = @static Companion.CenterVertically
+  stable content: @[ExtensionFunctionType] Function3<RowScope, Composer, Int, Unit>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableCardPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableCardDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable, [androidx.compose.ui.UiComposable]]") fun StarWarsExpandableCard(
+  stable expanded: Boolean
+  stable modifier: Modifier? = @static Companion
+  stable onClick: Function0<Unit>
+  stable content: Function2<Composer, Int, Unit>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableCardPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableCardDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableIcon(
+  stable expanded: Boolean
+  stable modifier: Modifier? = @static Companion
+  stable contentDescription: String? = @static null
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableIconPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsExpandableIconDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsIcon(
+  stable imageVector: ImageVector
+  stable modifier: Modifier? = @static Companion
+  stable tint: Color = @dynamic StarWarsTheme.<get-colors>($composer, 0b0110).onSurface
+  stable contentDescription: String? = @static null
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsIconPreview(
+  stable themeContent: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsIconDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsIconButton(
+  stable imageVector: ImageVector
+  stable onClick: Function0<Unit>
+  stable modifier: Modifier? = @static Companion
+  stable contentDescription: String? = @static null
+  stable enabled: Boolean = @static true
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsIconButtonPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsIconButtonDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsSearchBar(
+  stable query: String
+  stable onQueryChange: Function1<String, Unit>
+  stable loading: Boolean
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsSearchBarPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsSearchBarDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable, [androidx.compose.ui.UiComposable]]") fun StarWarsSurface(
+  stable modifier: Modifier? = @static Companion
+  stable color: Color = @dynamic StarWarsTheme.<get-colors>($composer, 0b0110).surface
+  stable content: Function2<Composer, Int, Unit>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsSurfacePreview(
+  stable themeContent: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsSurfaceDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsText(
+  stable text: String
+  stable modifier: Modifier? = @static Companion
+  stable color: Color = @dynamic StarWarsTheme.<get-colors>($composer, 0b0110).onSurface
+  stable style: TextStyle? = @static StarWarsTheme.typography.body
+  stable overflow: TextOverflow = @static Companion.Clip
+  stable maxLines: Int = @static Companion.MAX_VALUE
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsTextPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsTextDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsTextButton(
+  stable text: String
+  stable onClick: Function0<Unit>
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsTextButtonPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsTextButtonDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsWarningBadge(
+  stable warning: StarWarsWarning
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsWarningBadgePreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun StarWarsWarningBadgeDarkPreview()
+fun rememberStarWarsRipple(
+  stable bounded: Boolean = @static true
+  stable radius: Dp = @static Companion.Unspecified
+  stable color: Color = @dynamic StarWarsTheme.<get-colors>($composer, 0b0110).primary
+): Indication
+restartable skippable scheme("[0, [0]]") fun StarWarsTheme(
+  stable themeContext: StarWarsThemeContext? = @dynamic getThemeContext(isSystemInDarkTheme($composer, 0))
+  stable content: Function2<Composer, Int, Unit>
+)
+restartable skippable fun SetStatusBarColor(
+  stable themeContext: StarWarsThemeContext
+  stable color: Color
+)
+readonly fun <get-colors>(
+  unused stable <this>: StarWarsTheme
+): StarWarsColors
+readonly fun <get-elevations>(
+  unused stable <this>: StarWarsTheme
+): StarWarsElevations

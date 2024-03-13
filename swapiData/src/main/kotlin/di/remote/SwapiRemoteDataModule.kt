@@ -17,7 +17,7 @@ import javax.inject.Singleton
 object SwapiRemoteDataModule {
 
     @Provides
-    fun provideBaseUrl(): String = "https://swapi.dev/"
+    fun provideBaseUrl(): String = "https://swapi.py4e.com/"
 
     @Provides
     @Singleton

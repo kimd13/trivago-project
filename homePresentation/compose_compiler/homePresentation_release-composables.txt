@@ -1,0 +1,85 @@
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreen(
+  stable state: HomeScreenState
+  stable searchArgs: HomeSearchArgs
+  stable searchCharacters: Function1<@[ParameterName(name = 'query')] String, Unit>
+  stable onCharacterClick: Function1<@[ParameterName(name = 'id')] Long, Unit>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable, [androidx.compose.ui.UiComposable]]") fun ExpandingScreen(
+  stable backgroundColor: Color
+  stable modifier: Modifier? = @static Companion
+  stable content: @[ExtensionFunctionType] Function3<ColumnScope, Composer, Int, Unit>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+  stable state: HomeScreenState? = @dynamic Success("Foo", HomePage(1, true, {
+
+}
+, true, {
+
+}
+, persistentListOf(HomeCharacter(0L, "Anakin Skywalker", VagueDescription), HomeCharacter(1L, "Yoda", VagueDescription), HomeCharacter(2L, "Obi-Wan Kenobi", VagueDescription), HomeCharacter(3L, "Han Solo", VagueDescription))))
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenReadyForSearchPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenReadyForSearchDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenNoResultsPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenNoResultsDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenLoadingPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeScreenLoadingDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun LoadingContent(
+  stable query: String
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun LoadingContentPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun LoadingContentDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun NoResultsContent(
+  stable query: String
+  stable warning: StarWarsWarning?
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun NoResultsContentPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun NoResultsContentDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun PageController(
+  stable currentPageNumber: Int
+  stable nextPageExists: Boolean
+  stable nextPage: Function0<Unit>
+  stable previousPageExists: Boolean
+  stable previousPage: Function0<Unit>
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun PageControllerPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun PageControllerDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun QuickGlanceCharacterCard(
+  stable name: String
+  stable description: HomeCharacterDescription
+  stable onClick: Function0<Unit>
+  stable modifier: Modifier? = @static Companion
+)
+fun toStringComposed(
+  stable <this>: HomeCharacterDescription
+): String
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun QuickGlanceCharacterCardPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun QuickGlanceCharacterCardDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SuccessContent(
+  stable page: HomePage
+  stable onCharacterClick: Function1<@[ParameterName(name = 'id')] Long, Unit>
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SuccessContentPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SuccessContentDarkPreview()

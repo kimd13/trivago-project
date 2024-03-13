@@ -22,6 +22,7 @@ android {
         minSdk = Configuration.minSdk
 
         consumerProguardFiles("consumer-rules.pro")
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -75,5 +76,9 @@ dependencies {
         testImplementation(MOCKK)
         testImplementation(COROUTINES)
         testImplementation(TURBINE)
+    }
+
+    with(AndroidTestDependencies){
+        androidTestImplementation(COMPOSE_UI_TEST)
     }
 }

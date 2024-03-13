@@ -1,0 +1,106 @@
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun CharacterProfileScreen(
+  stable characterPersonalSectionState: CharacterProfileSectionState<CharacterPersonalSection>
+  stable speciesSectionState: CharacterProfileSectionState<SpeciesSection>
+  stable homeWorldSectionState: CharacterProfileSectionState<HomeWorldSection>
+  stable filmsSectionState: CharacterProfileSectionState<FilmsSection>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun CharacterProfileScreenPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun CharacterProfileScreenDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun CharacterPersonalSection(
+  stable section: CharacterPersonalSection
+  stable modifier: Modifier? = @static Companion
+)
+fun toStringComposed(
+  unstable <this>: BirthYear
+): String
+fun toStringComposed(
+  unstable <this>: Height
+): String
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun CharacterPersonalSectionPreview(
+  stable themeContent: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun CharacterPersonalSectionDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun FilmsSection(
+  stable section: FilmsSection
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun FilmInfoCard(
+  stable info: FilmInfo
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun FilmsSectionPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun FilmsSectionDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeWorldSection(
+  stable section: HomeWorldSection
+  stable modifier: Modifier? = @static Companion
+)
+fun toStringComposed(
+  unstable <this>: Population
+): String
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeWorldSectionPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun HomeWorldSectionDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionHeading(
+  stable text: String
+  stable warning: StarWarsWarning?
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionHeadingPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionHeadingDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable, [androidx.compose.ui.UiComposable]]") fun SectionLayout(
+  stable state: CharacterProfileSectionState<T>
+  stable title: String
+  stable successContent: Function3<T, Composer, Int, Unit>
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLayoutPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+  stable states: ImmutableList<CharacterProfileSectionState<CharacterPersonalSection>>? = @dynamic entries.mapImmutable { it: StarWarsWarning ->
+  Success  (  CharacterPersonalSection  (  CharacterPersonalInfo  (  "Daniel Kim"  ,   Unknown  ,   Unknown  )  )  ,   it  )
+}
+
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLayoutDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLayoutLoadingPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLayoutLoadingDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLayoutNothingToDisplayPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLayoutNothingToDisplayDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLoadingContent(
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLoadingContentPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionLoadingContentDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionNothingToDisplayContent(
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionNothingToDisplayContentPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SectionNothingToDisplayContentDarkPreview()
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SpeciesSection(
+  stable section: SpeciesSection
+  stable modifier: Modifier? = @static Companion
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SpeciesInfoCard(
+  stable info: SpeciesInfo
+  stable modifier: Modifier? = @static Companion
+)
+fun toStringComposed(
+  unstable <this>: Language
+): String
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SpeciesSectionPreview(
+  stable themeContext: StarWarsThemeContext? = @static StarWarsThemeContext.LIGHT
+)
+restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun SpeciesSectionDarkPreview()
