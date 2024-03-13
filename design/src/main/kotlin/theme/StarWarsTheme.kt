@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.SideEffect
-import androidx.compose.runtime.staticCompositionLocalOf
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
@@ -110,10 +110,10 @@ object StarWarsTheme {
 }
 
 
-private val LocalStarWarsColors = staticCompositionLocalOf<StarWarsColors> {
+private val LocalStarWarsColors = compositionLocalOf<StarWarsColors> {
     error("No StarWarsColors provided.")
 }
 
-private val LocalStarWarsElevations = staticCompositionLocalOf<StarWarsElevations> {
+private val LocalStarWarsElevations = compositionLocalOf<StarWarsElevations> {
     error("No StarWarsElevations provided.")
 }
